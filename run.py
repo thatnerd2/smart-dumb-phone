@@ -3,11 +3,19 @@ import twilio.twiml
  
 app = Flask(__name__)
  
-# Try adding your own number to this list!
+
+def messageHandler (m):
+    tokens = m.split(" ")
+    cmd = tokens[0]
+    if cmd == "p":
+        return str(eval(' '.join(tokens[1::])))
+    else:
+        return "Unrecognized command: " + m;
+
+
+
+
 callers = {
-    "+14158675309": "Curious George",
-    "+14158675310": "Boots",
-    "+14158675311": "Virgil",
     "+15185964072": "Aaron"
 }
  
@@ -18,9 +26,9 @@ def hello_monkey():
     from_number = request.values.get('From', None)
     message_body = request.values.get('Body', None)
     if from_number in callers:
-        message = callers[from_number] + ", thanks for the message! BODY: " + str(message_body)
+        message = messageHandler(message_body);
     else:
-        message = "Monkey, thanks for the message! " + "BODY: " + str(message_body);
+        message = "Do not text this number.  Fees will be incurred after 3 texts to this number."
  
     resp = twilio.twiml.Response()
     resp.message(message)

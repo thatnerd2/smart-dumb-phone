@@ -2,6 +2,7 @@ import sys
 import requests;
 import json
 from flask import jsonify
+import wikipedia
 
 if len(sys.argv) == 1:
 	print "Usage: python lang-sandbox.py \"<command>\"";
@@ -23,8 +24,10 @@ elif cmd == "weather":
 	description = dat["weather"][0]["main"] + ", (" + dat["weather"][0]["description"] + ")";
 	result = "Temp (F): min: " + fare[0] + ", avg: " + fare[1] + ", max: " + fare[2] + ", descript: " + description;
 	print result
-	print len(result)
-
+elif cmd == "wiki":
+	#print ' '.join(tokens[1::])
+	page = wikipedia.summary(' '.join(tokens[1::]))
+	print page[0:310];
 elif cmd == "hn":
 	numStories = max(10, int(tokens[2]) if len(tokens) > 2 else 3);
 	topStoriesIds = requests.get('https://hacker-news.firebaseio.com/v0/topstories.json').json()

@@ -4,6 +4,7 @@ from itertools import permutations
 import requests;
 import math
 import random
+import wikipedia
  
 app = Flask(__name__)
  
@@ -22,6 +23,11 @@ def messageHandler (m):
             storyTitles.append("(" + story["title"] + ")")
         res = ', '.join(storyTitles);
         return res[0:min(len(res), 150)]
+    elif cmd == "wiki":
+        if len(tokens) < 2:
+            return "Missing Wikipedia Argument";
+        page = wikipedia.summary(' '.join(tokens[1::]));
+        return page[0:150]
     elif cmd == "weather":
         at = tokens[1] if len(tokens) > 1 else "84601";
         dat = requests.get("http://api.openweathermap.org/data/2.5/weather?zip=" + at + ",us&appid=2de143494c0b295cca9337e1e96b00e0").json()

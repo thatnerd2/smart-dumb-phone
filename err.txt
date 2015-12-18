@@ -1,0 +1,35 @@
+[2015-12-17 16:43:42 -0700] [3769] [INFO] Starting gunicorn 19.4.1
+[2015-12-17 16:43:42 -0700] [3769] [INFO] Listening at: http://127.0.0.1:8000 (3769)
+[2015-12-17 16:43:42 -0700] [3769] [INFO] Using worker: sync
+[2015-12-17 16:43:42 -0700] [3772] [INFO] Booting worker with pid: 3772
+[2015-12-17 16:44:05 -0700] [3769] [INFO] Handling signal: int
+[2015-12-17 16:44:05 -0700] [3772] [INFO] Worker exiting (pid: 3772)
+[2015-12-17 16:44:05 -0700] [3769] [INFO] Shutting down: Master
+[2015-12-17 16:44:06 -0700] [3774] [INFO] Starting gunicorn 19.4.1
+[2015-12-17 16:44:06 -0700] [3774] [INFO] Listening at: http://127.0.0.1:8000 (3774)
+[2015-12-17 16:44:06 -0700] [3774] [INFO] Using worker: sync
+[2015-12-17 16:44:06 -0700] [3777] [INFO] Booting worker with pid: 3777
+[2015-12-17 16:44:45 -0700] [3774] [INFO] Handling signal: int
+[2015-12-17 16:44:45 -0700] [3777] [INFO] Worker exiting (pid: 3777)
+[2015-12-17 16:44:46 -0700] [3774] [INFO] Shutting down: Master
+[2015-12-17 16:44:48 -0700] [3781] [INFO] Starting gunicorn 19.4.1
+[2015-12-17 16:44:48 -0700] [3781] [INFO] Listening at: http://127.0.0.1:8000 (3781)
+[2015-12-17 16:44:48 -0700] [3781] [INFO] Using worker: sync
+[2015-12-17 16:44:48 -0700] [3784] [INFO] Booting worker with pid: 3784
+[2015-12-17 16:45:27 -0700] [3781] [INFO] Handling signal: int
+[2015-12-17 16:45:27 -0700] [3784] [INFO] Worker exiting (pid: 3784)
+[2015-12-17 16:45:27 -0700] [3781] [INFO] Shutting down: Master
+[2015-12-17 16:45:27 -0700] [3787] [INFO] Starting gunicorn 19.4.1
+[2015-12-17 16:45:27 -0700] [3787] [INFO] Listening at: http://127.0.0.1:8000 (3787)
+[2015-12-17 16:45:27 -0700] [3787] [INFO] Using worker: sync
+[2015-12-17 16:45:27 -0700] [3790] [INFO] Booting worker with pid: 3790
+[2015-12-17 16:45:47 -0700] [3787] [INFO] Handling signal: int
+[2015-12-17 16:45:47 -0700] [3790] [INFO] Worker exiting (pid: 3790)
+[2015-12-17 16:45:47 -0700] [3787] [INFO] Shutting down: Master
+[2015-12-17 17:05:14 -0700] [3882] [INFO] Starting gunicorn 19.4.1
+[2015-12-17 17:05:14 -0700] [3882] [INFO] Listening at: http://127.0.0.1:8000 (3882)
+[2015-12-17 17:05:14 -0700] [3882] [INFO] Using worker: sync
+[2015-12-17 17:05:14 -0700] [3885] [INFO] Booting worker with pid: 3885
+[2015-12-17 17:08:02 -0700] [3882] [INFO] Handling signal: int
+[2015-12-17 17:08:02 -0700] [3885] [INFO] Worker exiting (pid: 3885)
+[2015-12-17 17:08:02 -0700] [3882] [INFO] Shutting down: Master
